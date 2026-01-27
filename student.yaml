@@ -1,0 +1,37 @@
+- name: "pratiksha"
+  dob: "16-04-1998"
+  age: 28
+  addresses:
+  - doorno: 4-34
+    street: gandinagar
+    city: hyderabad
+    pin: 7493
+    type: current
+  - doorno: 4-34
+    street: gandinagar
+    city: hyderabad
+    pin: 7493
+    type: current
+  skills:
+  - java
+  - devops
+  - cloud
+
+  - name: "pratiksha"
+  dob: "16-04-1998"
+  age: 28
+  addresses:
+  - doorno: 4-34
+    street: gandinagar
+    city: hyderabad
+    pin: 7493
+    type: current
+  - doorno: 4-34
+    street: gandinagar
+    city: hyderabad
+    pin: 7493
+    type: current
+  skills:
+  - java
+  - devops
+  - cloud

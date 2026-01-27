@@ -1,0 +1,43 @@
+<!-- List of Objects -->
+<Students>
+<!-- Object -->
+    <Student>
+        <Name>Pratiksha</Name>
+        <DOB>16-04-1998</DOB>
+        <Age>28</Age>
+ <!-- List of Objects -->
+        <Addresses>
+<!-- Object -->
+            <Address type="perm">
+            <doorno>2-34-543</doorno>
+            <Street>Aliabad</Street>
+            <City>Hyderabad</City>
+            </Address>
+
+<!-- Object -->
+            <Address type="Current">
+            <doorno>2-34-543</doorno>
+            <Street>Aliabad</Street>
+            <City>Hyderabad</City>
+            </Address>
+        </Addresses>
+        </Student>
+    <Student>
+        <Name>Pratiksha</Name>
+        <DOB>16-04-1998</DOB>
+        <Age>28</Age>
+        <Addresses>
+            <Address type="perm">
+            <doorno>2-34-543</doorno>
+            <Street>Aliabad</Street>
+            <City>Hyderabad</City>
+            </Address>
+
+            <Address type="Current">
+            <doorno>2-34-543</doorno>
+            <Street>Aliabad</Street>
+            <City>Hyderabad</City>
+            </Address>
+        </Addresses>
+        </Student>
+</Students>

@@ -1,0 +1,21 @@
+{
+    "name": "Pratiksha",
+    "dob": "16-041998",
+    "age": 28,
+    "addresses": [
+        {
+            "doorno": "2-233",
+            "street": "aliadbad",
+            "city": "hyderabad",
+            "address type": "current"
+        },
+
+        {
+            "doorno": "2-233",
+            "street": "aliadbad",
+            "city": "hyderabad",
+            "address type": "current"
+        }
+    ],
+    "Skills": ["java", "Devops", "python"]
+}
