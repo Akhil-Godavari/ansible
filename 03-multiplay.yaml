@@ -6,7 +6,7 @@
       msg: "Hello from Play-01 and Task-01"
 
   - name: Play-01 and Task-02
-    ansiable.builtin.debug:
+    ansible.builtin.debug:
       msg: "Hellp from Play-01 and Task-02"
 
 - name: Play-02
@@ -17,6 +17,6 @@
       msg: "Hello from Play-02 and Task-01"
 
   - name: Play-02 and Task-02
-    ansiable.builtin.debug:
+    ansible.builtin.debug:
       msg: "Hellp from Play-02 and Task-02"
 
