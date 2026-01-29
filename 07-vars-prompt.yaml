@@ -1,0 +1,11 @@
+- name: Variables from the prompt
+  hosts: local
+  connection: local
+  vars_prompt:
+  - name: username
+    prompt: What is the Username?
+    private: false
+  tasks: 
+  - name: Print the credientials
+    ansible.builtin.debug:
+      msg: " Username is: {{ username }}"
