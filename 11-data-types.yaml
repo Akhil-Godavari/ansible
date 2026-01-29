@@ -1,0 +1,19 @@
+- name: Dataypes
+  hosts: local
+  connection: local
+  vars:
+    Course: "DevOps with Aws" # string
+    Duration: 120 # number
+    is_live: true # boolean
+    # list
+    tools: # ["linux", "shell", "ansible"]
+    - linux
+    - shell
+    - ansiable
+    concepts: # dictionary or map, if it doesnot start with - it is called dictionary
+      cloud: Aws
+      cm: ansiable
+  tasks:
+  - name: Printing Data Typpes
+    ansible.builtin.debug:
+      msg: " Course: {{ Course }}, Duration: {{ Duration }}, Live Status: {{ is_live }}, Tools Used: {{ tools }}, Concepts Taught: {{ concepts }}"
