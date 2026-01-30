@@ -5,4 +5,4 @@
   tasks:
   - name: gather facts
     ansible.builtin.debug:
-      msg: "{{ gather_fact }}"
+      msg: "{{ ansible_facts }}"
