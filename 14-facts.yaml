@@ -1,0 +1,16 @@
+- name: Checking facts
+  hosts: local
+  connection: local
+  become: yes  # to become root user
+  tasks:
+  - name: installing nginx fi it is RedHat
+    ansible.builtin.dnf:
+      name: nginx
+      state: latest
+    when: ansible_os_family == "RedHat"  # use anisble if you are refering to ansible facts
+
+  - name: installing nginx fi it is Ubuntu
+    ansible.builtin.apt:
+      name: nginx
+      state: latest
+    when: ansible_os_family == "Debian" 
