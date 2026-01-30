@@ -1,0 +1,13 @@
+- name: Installing packages in loop
+  hosts: local
+  connection: local
+  become: yes
+  tasks:
+  - name: Installing packages
+    ansible.builtin.package:
+      name: "{{ item }}"
+      state: latest
+    loop:
+    - nginx
+    - mysql
+    - zip
