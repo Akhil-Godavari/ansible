@@ -1,0 +1,8 @@
+- name: Gather Facts
+  hosts: local
+  connection: local
+  #ansible will collect all the facts from the server we are connecting and then execue the task
+  tasks:
+  - name: gather facts
+    ansible.builtin.debug:
+      msg: "{{ gather_facts }}"
