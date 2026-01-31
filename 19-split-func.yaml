@@ -2,10 +2,18 @@
   hosts: local
   connection: local
   vars:
+  #### STRING ####
     technologies: "ansible, docker, kubernetes, github"
+  #### MAP or Dictionary ####
     tags:
       Application: payment
       Environment: dev 
+  #### list of Dictorary ####
+    listTags:
+    - key: Application
+      value: payment
+    - key: Environment
+      value: dev
   tasks:
   - name: List of string
     ansible.builtin.debug:
@@ -14,3 +22,7 @@
   - name: Dictornary of string
     ansible.builtin.debug:
       msg: " Dictonary is: {{ tags | dict2items }}"
+
+  - name: List of MAp to MAp
+    ansible.builtin.debug:
+      msg: " list is: {{ listTags | items2dist }}"
