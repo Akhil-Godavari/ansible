@@ -4,8 +4,8 @@
   vars:
     technologies: "ansible, docker, kubernetes, github"
     tags:
-    application: payment
-    environment: dev 
+    Application: payment
+    Environment: dev 
   tasks:
   - name: List of string
     ansible.builtin.debug:
