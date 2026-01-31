@@ -1,9 +1,16 @@
-- name: Transforming string into list
+- name: Transforming string 
   hosts: local
   connection: local
   vars:
-    fruits: "apple, mango, orange, pineapple"
+    technologies: "ansible, docker, kubernetes, github"
+    tags:
+    application: payment
+    environment: dev 
   tasks:
   - name: List of string
     ansible.builtin.debug:
-      msg: " List is {{ fruits | split(',') }}"
+      msg: " List is {{ technologies | split(',') }}"
+  
+  - name: Dictornary of string
+    ansible.builtin.debug:
+      msg: " Dictonary is {{ tags | dict2item }}"
