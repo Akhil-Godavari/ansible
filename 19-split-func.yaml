@@ -13,4 +13,4 @@
   
   - name: Dictornary of string
     ansible.builtin.debug:
-      msg: " Dictonary is: {{ tags | dict2item }}"
+      msg: " Dictonary is: {{ tags | dict2items }}"
