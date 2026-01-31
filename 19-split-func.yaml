@@ -6,7 +6,7 @@
     technologies: "ansible, docker, kubernetes, github"
     name: "Pratiksha Gunti"
     email: "Pratiksha.gunti@GMAIL.COM"
-    ipaddress: 192.168.0.1
+    ipaddress: "192.168.0.1"
   #### MAP or Dictionary ####
     tags:
       Application: payment
