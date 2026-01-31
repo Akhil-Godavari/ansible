@@ -5,6 +5,7 @@
   #### STRING ####
     technologies: "ansible, docker, kubernetes, github"
     name: "Pratiksha Gunti"
+    email: "Pratiksha.gunti@GMAIL.COM"
   #### MAP or Dictionary ####
     tags:
       Application: payment
@@ -47,4 +48,4 @@
 
   - name: convert into lowercase
     ansible.builtin.debug:
-      msg: "{{ name | lower }}"
+      msg: "{{ email | lower }}"
