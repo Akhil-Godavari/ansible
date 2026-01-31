@@ -55,3 +55,11 @@
     ansible.builtin.debug: 
       msg: "IP Address is: {{ ipaddress | ansible.utils.ipv4 }}"
 
+  - name: grep for root
+    ansible.builtin.command: cat /etc/passwd | grep root
+    register: command_output
+
+  - name: printing the value from command_output
+    ansible.builtin.debug:
+      msg: "{{ command_output }}"
+
