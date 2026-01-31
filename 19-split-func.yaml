@@ -25,4 +25,4 @@
 
   - name: List of MAp to MAp
     ansible.builtin.debug:
-      msg: " list is: {{ listTags | items2dist }}"
+      msg: " list is: {{ listTags | items2dict }}"
