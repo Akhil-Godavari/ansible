@@ -29,7 +29,7 @@
 
   - name: read the yaml file into a variables
     ansible.builtin.set_fact:
-      student_yaml: "{{ lookup('file', student.yaml) | from_yaml }}"
+      student_yaml: "{{ lookup('file', 'student.yaml') | from_yaml }}"
   
   - name: convert the yaml into json
     ansible.builtin.debug:
