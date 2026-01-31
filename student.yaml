@@ -11,14 +11,14 @@
     street: gandinagar
     city: hyderabad
     pin: 7493
-    type: current
+    type: perm
   skills:
   - java
   - devops
   - cloud
 
-  - name: "pratiksha"
-  dob: "16-04-1998"
+  - name: "Akhil"
+  dob: "21-08-1998"
   age: 28
   addresses:
   - doorno: 4-34
@@ -30,7 +30,7 @@
     street: gandinagar
     city: hyderabad
     pin: 7493
-    type: current
+    type: perm
   skills:
   - java
   - devops
