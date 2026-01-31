@@ -6,6 +6,7 @@
     technologies: "ansible, docker, kubernetes, github"
     name: "Pratiksha Gunti"
     email: "Pratiksha.gunti@GMAIL.COM"
+    ipaddress: 345.4329.43563.4332
   #### MAP or Dictionary ####
     tags:
       Application: payment
@@ -49,3 +50,7 @@
   - name: convert into lowercase
     ansible.builtin.debug:
       msg: "{{ email | lower }}"
+
+  - name: Validating IP addresses
+    ansible.builtin.debug: "{{ ipaddress | ansible.utils.ipv4 }}"
+
