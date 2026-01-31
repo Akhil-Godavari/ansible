@@ -52,5 +52,6 @@
       msg: "{{ email | lower }}"
 
   - name: Validating IP addresses
-    ansible.builtin.debug: "{{ ipaddress | ansible.utils.ipv4 }}"
+    ansible.builtin.debug: 
+      msg: "IP Address is: {{ ipaddress | ansible.utils.ipv4 }}"
 
