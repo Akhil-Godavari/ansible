@@ -4,8 +4,8 @@
   vars:
     technologies: "ansible, docker, kubernetes, github"
     tags:
-    Application: payment
-    Environment: dev 
+      Application: payment
+      Environment: dev 
   tasks:
   - name: List of string
     ansible.builtin.debug:
@@ -13,4 +13,4 @@
   
   - name: Dictornary of string
     ansible.builtin.debug:
-      msg: " Dictonary is {{ tags | dict2item }}"
+      msg: " Dictonary is: {{ tags | dict2item }}"
